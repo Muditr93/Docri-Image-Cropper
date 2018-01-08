@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="css/custom.css">
+ 	<link rel="stylesheet" href="css/main.css">
+
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+<title>IMAGE UPLOADER</title>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="container">
+<div id="left-image-cont" class="col-md-6 col-sm-6 col-xs-12">
+<!-- 	    <img class="blah" src /> -->
+	    <!-- <img class="sample" style="position: absolute; width : 380px; height: 380px" src="images/cup.png"/> -->
+<!-- 	    <img class="blahh" src  />
+	    <img class="sample"  src="images/frame.png"/> -->
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+
+	<div class="member-reply">
+	<div class="bg-btn" > <span id="img-button-text"> UPLOAD YOUR IMAGE <span class="glyphicon glyphicon-upload"></span></span>
+	<input type="file" class="file-btn"  onchange="readURL(this);" >
+	</div>
+	</div>
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12">
+  <div class="table">
+    <div class="tableRow">
+      <div class="tableCell box">
+        <canvas id="panel" width="380" height="380"></canvas>
+      </div>
+      <div class="tableCell box">
+        <img id="crop_result" />
+      </div>
+    </div>
+
+    <div id="maincrop" class="tableRow">
+      <div class="tableCell">
+        <span id="zoom-button">Zoom it:</span>
+        <input id='scaleSlider' type='range' min='1' max='3.0' step='0.01' value='1.0' />
+
+      </div>
+      <div class="tableCell">
+        <button class="btn btn-primary" id="cropImgButtn">Crop It</button>
+   		<a class="btn btn-primary" id="imgdown" href="http://dummyimage.com/600x400/000/fff.png" download>Download this image</a>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>
